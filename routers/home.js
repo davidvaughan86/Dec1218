@@ -1,9 +1,12 @@
-const express = require("express")
-const router = express.Router()
+const express = require("express");
+const router = express.Router();
 
 
-app.get('/' ,(req,res) => {
-    res.send('<h1> hello world</h1>')
-});
+const { 
+    homehandler, homeHandler 
+} = require('../controllers/home');
+
+router.get('/' , homeHandler);
+
 
 module.exports = router;

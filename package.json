@@ -1,7 +1,6 @@
 {
   "name": "dc1218",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon",
@@ -18,12 +17,14 @@
   },
   "homepage": "https://github.com/davidvaughan86/Dec1218#readme",
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "sequelize-cli": "^6.2.0"
   },
   "dependencies": {
     "express": "^4.17.1",
     "express-es6-template-engine": "^2.2.3",
-    "morgan": "^1.10.0",
-    "sequelize-cli": "^6.2.0"
-  }
+    "morgan": "^1.10.0"
+  },
+  "keywords": [],
+  "description": ""
 }
