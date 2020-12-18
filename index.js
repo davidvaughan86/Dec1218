@@ -25,15 +25,19 @@ app.use('/', homeRouter);
 
 app.get('/movies' , (req,res) => {
     // res.send(data)
-    res.render('movies', {
-        locals: {
-            movies: 'here is some text'
+    const movieHtmlArray = [];
+    for (let d of data) {
+        movieHtmlArray.push(`<p> ${d.name} </p>`);
+    
         }
+        const movieHtmlString = movieHtmlArray.join('');
+        console.log(movieHtmlString)
+        res.render('movies' , {
+            locals: {
+                movie: movieHtmlString
+            }
+        })
     });
-
-});
-
-
 
 
 
